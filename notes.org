@@ -1,1 +1,15 @@
-/home/mohit/Learn/learn_java/notes.org
+* javadoc
+** To generate documentation for your program, 
+** use the doc comments ( /** */) to enclose lines of text for the javadoc tool to find. 
+** The javadoc tool locates the doc comments embedded in source files 
+** and uses those comments to generate API documentation.
+** Example
+ /** This class displays a text string at
+ *  the console.
+ */
+ class ExampleProgram {
+   public static void main(String[] args){
+     System.out.println("I'm a Simple Program");
+   }
+ }
+

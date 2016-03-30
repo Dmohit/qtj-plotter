@@ -1,1 +1,13 @@
-/home/mohit/Learn/learn_java/plotter/log
+Version 1
+	First pre-alpha version
+ 	Uses QPainter
+Version 2
+	Uses QGraphicsScene
+Version 3
+	Plots Random Numbers with large (visible ellipses)
+Version 4
+	Remove Data Generation from plotwidget class
+Version 5
+	Data is not stored in plotwidget class anymore, its always in Qt now
+Version 6
+	Now with Toolbar Support

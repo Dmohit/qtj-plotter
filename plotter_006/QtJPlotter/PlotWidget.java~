@@ -1,0 +1,42 @@
+package QtJPlotter;
+
+import com.trolltech.qt.core.*;
+import com.trolltech.qt.gui.*;
+
+import java.util.*;
+
+public class PlotWidget extends QWidget
+{
+    private QGraphicsView view = new QGraphicsView();
+    private QGraphicsScene scene = new QGraphicsScene();
+    private List<Double> xpoints = new ArrayList<Double>();
+    private List<Double> ypoints;
+    
+    public void addPoints(double[] x, double[] y)
+    {
+	if(x.length != y.length)
+	    System.out.println("Exception Handling not implemented; crash likely.");
+	else
+	    {
+		int i = 0;
+		int M = x.length;
+
+		System.out.println(M);
+		
+		xpoints.addAll(x.asList(x));
+		ypoints.add(y);
+	    }
+    }
+
+    public void Plotter()
+    {
+	setWindowTitle(tr("QTJambi Plot"));
+	view.setScene(scene);
+	scene.setBackgroundBrush(new QBrush(QColor.white));
+
+	for(int i = 0; i < xpoints.size(); i++)
+	    scene.addEllipse(xpoints.get(i), ypoints.get(i), 5, 5);
+
+	view.show();
+    }    
+}

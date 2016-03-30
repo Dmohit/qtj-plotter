@@ -1,1 +1,12 @@
-/home/mohit/Learn/learn_java/plotter/class_design.org
+* A Map of the Code in Packages and 
+* Package: Random 
+** Class:RandomGaussian
+** Functionality: It gives us normal random numbers
+* Package: Ui
+** Class: Plotter_Ui
+** Functionality: It draws the MainWindow UI using Qt
+* Package: QtJPlotter
+** Class: 
+** Functionality: 
+** Class:
+** Functionality:
